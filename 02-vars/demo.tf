@@ -30,7 +30,7 @@ variable sample_list {
     default = [
         "DevOps" ,
         55,
-        "Manoj"
+        "Manoj",
         "0730AMIST"
     ]
 }
