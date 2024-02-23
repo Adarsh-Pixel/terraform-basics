@@ -21,3 +21,9 @@ It allows users to define and provision infrastructure resources in a declarativ
 ---
     $ terraform plan -var-file=dev.tfvars
 ---
+
+> How to supply variables from the command line ? use -var city=delhi
+
+---
+$ terraform apply -var-file=dev.tfvars -var states=28
+---
