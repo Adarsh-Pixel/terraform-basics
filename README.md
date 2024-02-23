@@ -19,5 +19,5 @@ It allows users to define and provision infrastructure resources in a declarativ
 > How to supply variables file are a part of terraform sample ?
 
 ---
-$terraform plan -var-file=dev.tfvars
+    $ terraform plan -var-file=dev.tfvars
 ---
