@@ -73,3 +73,9 @@ variable "country" {}
 output "country_name"{
     value = "Name of our country is ${var.country}"
 }
+
+variable "states" {}
+
+output "states_count" {
+    value = "Total number of states in India is ${var.states}"
+}
