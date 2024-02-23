@@ -24,3 +24,17 @@ variable "number" {
 output "op_number" {
     value = var.number
 }
+
+# declaring a list variable
+variable sample_list {
+    default = [
+        "DevOps" ,
+        55,
+        "Manoj"
+        "0730AMIST"
+    ]
+}
+
+output "print_list" {
+    value = "Welcome to ${var.sample_list[0]} training and the batch timinings are ${var.sample_list[3]} and the batch number is ${var.sample_list[1]}"
+}
