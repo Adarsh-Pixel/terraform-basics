@@ -42,3 +42,11 @@ attribute example: private_ip, vm_id, network_attribute
 
 
 >>> You cannot create either an attribute nor an argument. You just need to stick to the provider documentation. 
+
+### Can we write terraform code in multiple files of a folder?
+
+---
+Yes! As long as your code is in the files that ends with *.tf, terraform takes care of everything.
+
+When you do a terraform plan, it will load all of them in Alphabetical order. But compiles as per the logic. (It will take care of it.)
+----
