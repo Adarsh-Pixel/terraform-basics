@@ -27,3 +27,17 @@ It allows users to define and provision infrastructure resources in a declarativ
 ---
 $ terraform apply -var-file=dev.tfvars -var states=28
 ---
+
+### Attribute vs Argument in terraform
+
+argument: This comes up as a part of resource creation! This is to define properties to the resource you are creating.
+----
+argument example: ami, security_group, key_name
+---
+
+attribute: These are the properties of the resource which will only be available after the resource creation only
+----
+attribute example: private_ip, vm_id, network_attribute
+----
+
+
