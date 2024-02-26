@@ -41,3 +41,4 @@ attribute example: private_ip, vm_id, network_attribute
 ----
 
 
+>>> You cannot create either an attribute nor an argument. You just need to stick to the provider documentation. 
