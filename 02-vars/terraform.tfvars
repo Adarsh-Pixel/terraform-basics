@@ -1,2 +1,3 @@
-city  = "bangalore"
-state = "Karnataka"
+city       = "bangalore"
+state      = "Karnataka"
+fav_cloud  = "aws"
