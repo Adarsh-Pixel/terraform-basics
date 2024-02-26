@@ -79,3 +79,9 @@ variable "states" {}
 output "states_count" {
     value = "Total number of states in India is ${var.states}"
 }
+
+variable "fav_cloud" {}
+
+output "fav_cloud_op" {
+    value = "My favourite cloud is ${var.fav_cloud}"
+}
