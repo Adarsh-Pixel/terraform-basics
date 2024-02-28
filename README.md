@@ -51,7 +51,6 @@ Yes! As long as your code is in the files that ends with *.tf, terraform takes c
 When you do a terraform plan, it will load all of them in Alphabetical order. But compiles as per the logic. (It will take care of it.)
 ----
 
-
 ### Common Terraform commands
 
 ---
@@ -61,12 +60,14 @@ When you do a terraform plan, it will load all of them in Alphabetical order. Bu
 ---
 
 ### if you want to supply any value of the variable from the command line
+
 ---
     $ terraform plan -var VARNAME=value 
     $ terraform apply -auto-approve -var VARNAME=value 
 ---
 
 ### if you want to supply any value of the variable from another file apart from terraform.tfvars, you need to explicitly pass the variable file name to be used.
+
 ---
     $ terraform plan -var-file=dev.tfvars
     $ terraform apply -auto-approve -var-file=dev.tfvars
