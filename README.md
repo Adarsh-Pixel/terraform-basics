@@ -52,12 +52,12 @@ When you do a terraform plan, it will load all of them in Alphabetical order. Bu
 ----
 
 
-# Common Terraform commands
+### Common Terraform commands
 
 ---
-$ Terraform init
-$ Terraform plan
-$ Terraform apply
+    $ Terraform init
+    $ Terraform plan
+    $ Terraform apply
 ---
 
 ### if you want to supply any value of the variable from the command line
