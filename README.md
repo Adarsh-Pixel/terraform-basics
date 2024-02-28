@@ -25,7 +25,7 @@ It allows users to define and provision infrastructure resources in a declarativ
 > How to supply variables from the command line ? use -var city=delhi
 
 ---
-$ terraform apply -var-file=dev.tfvars -var states=28
+    $ terraform apply -var-file=dev.tfvars -var states=28
 ---
 
 ### Attribute vs Argument in terraform
