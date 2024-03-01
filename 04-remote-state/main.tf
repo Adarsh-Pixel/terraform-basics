@@ -15,3 +15,7 @@ resource "aws_instance" "web" {
     Name        = "Terraform-Web-Instance-${count.index+1}"
   }
 }
+
+variable "instances" {
+  default = ["catalogue", "user", "cart"]
+}
