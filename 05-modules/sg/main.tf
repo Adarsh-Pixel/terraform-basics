@@ -22,3 +22,8 @@ resource "aws_security_group" "allow_ssh" {
     Name                     = "allow_ssh"
   }
 }
+
+# Step 1: Declare the info that you wish to share as OUTPUT
+output "sg" {
+    value = aws_security_group.allow_ssh.id
+}
