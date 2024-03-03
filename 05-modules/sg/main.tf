@@ -1,10 +1,10 @@
 # Creates security group
-resource "aws_security_group" "allow_ssh" {
-  name                      = "allow_ssh"
-  description               = "Allow SSH inbound traffic"
+resource "aws_security_group" "allows_ssh" {
+  name                      = "allows_ssh"
+  description               = "Allows SSH inbound traffic"
 
   ingress {
-    description              = "SSH from Internet"
+    description              = "SSH from public Network"
     from_port                = 22
     to_port                  = 22
     protocol                 = "tcp"
@@ -19,11 +19,11 @@ resource "aws_security_group" "allow_ssh" {
   }
 
   tags = {
-    Name                     = "allow_ssh"
+    Name                     = "allow_public_ssh"
   }
 }
 
 # Step 1: Declare the info that you wish to share as OUTPUT
 output "sgid" {
-    value = aws_security_group.allow_ssh.id
+    value = aws_security_group.allows_ssh.id
 }
