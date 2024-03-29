@@ -123,3 +123,10 @@ MongoDB     ----->  Document DB [Our Applications code: USER, CART, CATALOGUE ar
 MySQL       ----->  RDS
 Redis       ----->  Elastic Cache
 RabbitMQ    ----->  Amazon MQ   [Our Application is not compatible with. Hence, we go with RabbitMQ on ec2 only]
+
+We will create 5 repos: 
+1) Terraform-Databases [This will be the root module]
+2) tf-module-docdb     [ This will be the backend module for Document DB]
+3) tf-module-mysql     [ this will be the backend module for MySQL]
+4) tf-module-redis     [ this will be the backend module for redis]
+5) tf-module-rabbitmq  [ this will be the backend module for RabbitMQ]
