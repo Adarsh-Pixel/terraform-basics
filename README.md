@@ -104,3 +104,22 @@ When you do a terraform plan, it will load all of them in Alphabetical order. Bu
     99% of the times, a good setup will ensure you as a user won't be having write access on the console.
     Only the IAM Role, which we use to configure JENKINS will only have right access.
 ---
+
+## what all needs to be created ??
+    1) Network      (Done)
+    2) Database     (MongoDB, MySQL, Redis, RabbitMQ)
+    3) Backend / applications components
+
+
+## For DB's, AWS offers PaS [Managed service for Databases ] and here is the advantage of it. 
+
+!) Backups and restoration would be offered by the cloud provider.
+2) Maintenance of the underlying infrastructure will be handled by the provider.
+3) Storage and Maintenance will be handled by the provider.
+4) DB Maintenance will go planned and will be handled by the provider and sometimes it incurs downtime. (only for major upgrades)
+5) High availability is offered as per the need.
+
+MongoDB     ----->  Document DB [Our Applications code: USER, CART, CATALOGUE are designed to operate with Mongo without username and password]
+MySQL       ----->  RDS
+Redis       ----->  Elastic Cache
+RabbitMQ    ----->  Amazon MQ   [Our Application is not compatible with. Hence, we go with RabbitMQ on ec2 only]
