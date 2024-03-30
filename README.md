@@ -130,3 +130,15 @@ We will create 5 repos:
 3) tf-module-mysql     [ this will be the backend module for MySQL]
 4) tf-module-redis     [ this will be the backend module for redis]
 5) tf-module-rabbitmq  [ this will be the backend module for RabbitMQ]
+
+# How can we read the information from another statefile ?
+
+In our case, terraform-databases, should have the information of the VPC which is created by the terraform-vpc!!!
+How can one repository reads the information from another statefile. 
+
+---
+Always ensure on adding the needed values as an OUTPUT. So that, those values will be recorded in statefile in a format that will be accessible by other modules. 
+
+All the databases, needs the subnet, vpc and other information from the network. Let's record the output.
+So that the DB module can access it. 
+---
