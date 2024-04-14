@@ -142,3 +142,16 @@ Always ensure on adding the needed values as an OUTPUT. So that, those values wi
 All the databases, needs the subnet, vpc and other information from the network. Let's record the output.
 So that the DB module can access it. 
 ---
+
+# Provisioners in Terraform
+
+---
+Provisioners help us to do tasks on the TOP of the created Infra or on the top of the Infra where your terraform scripts are running.
+---
+
+### There are 4 types of provisioners available in Terraform
+
+1) File Provisioner          [ to copy the files to the provisioned infrastructure ]
+2) Connection Provisioner    [ to establish connectino or authentication to the established infrastructure ]
+3) Remote Provisioner        [ to execute tasks on the top of the new provisioned infrastructure ]
+4) Local provisioner         [ to execute tasks on the top of the server where you're running the terraform ]
