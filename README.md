@@ -151,7 +151,18 @@ Provisioners help us to do tasks on the TOP of the created Infra or on the top o
 
 ### There are 4 types of provisioners available in Terraform
 
-1) File Provisioner          [ to copy the files to the provisioned infrastructure ]
-2) Connection Provisioner    [ to establish connectino or authentication to the established infrastructure ]
-3) Remote Provisioner        [ to execute tasks on the top of the new provisioned infrastructure ]
-4) Local provisioner         [ to execute tasks on the top of the server where you're running the terraform ]
+    ) File Provisioner          [ to copy the files to the provisioned infrastructure ]
+    2) Connection Provisioner    [ to establish connectino or authentication to the established infrastructure ]
+    3) Remote Provisioner        [ to execute tasks on the top of the new provisioned infrastructure ]
+    4) Local provisioner         [ to execute tasks on the top of the server where you're running the terraform ]
+
+>>> Points to be noted when dealing with provsioners 
+
+    1) Provsioners by default are create-time provisioner [ that means only during the creation of the resouce provisioners will be executed. Rest of the times, they won't be executed ]
+    2) Provisioners are always supposed to be executed inside a resource [ If the provisioner fails, resource which was created would marked as tained or damaged, which would be recreated on the next TF Apply and that's why it's not recommended to run the provisioners with in the real resources ]
+
+    PS : Real resources ??? Real resources are credible infra, we also have a dummy resource referred as null_resource.
+
+    3) It's always recommended to run the provisioners under the null_resources only. This will restrict the recreation of infra, in the event of the provisioner failure.
+
+    4) There are some event based provisioner triggers as well [ we will talk more about this later ] 
