@@ -166,3 +166,17 @@ Provisioners help us to do tasks on the TOP of the created Infra or on the top o
     3) It's always recommended to run the provisioners under the null_resources only. This will restrict the recreation of infra, in the event of the provisioner failure.
 
     4) There are some event based provisioner triggers as well [ we will talk more about this later ] 
+
+
+>>> Best practises to be followed to Qualify all the security standards :
+
+===
+1) Code should be secret free
+
+        Secret: userName, Password, Github Token. 
+
+2) Secrets should always be hosted on the Top of Central Secret Management Solution. Keeping secrets on Jenkins will only let Jenkins and its jobs to access it. But other technologies cannot access them.
+
+    Central secret Management Solution: HashiCorp vault, AWS secret Manager
+
+---
