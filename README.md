@@ -180,3 +180,10 @@ Provisioners help us to do tasks on the TOP of the created Infra or on the top o
     Central secret Management Solution: HashiCorp vault, AWS secret Manager
 
 ---
+
+
+
+### Types of Infrastructure 
+    1) Mutable Infra    :   Infra always remains the same. Only the application moves between the version
+    2) Immutable Infra  :   Infra changes along with the appliication
+    3) Containerized Infra  : 
