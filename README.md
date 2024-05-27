@@ -187,3 +187,17 @@ Provisioners help us to do tasks on the TOP of the created Infra or on the top o
     1) Mutable Infra    :   Infra always remains the same. Only the application moves between the version
     2) Immutable Infra  :   Infra changes along with the appliication
     3) Containerized Infra  : 
+
+
+### What is our strategy of Cost Optimized Approach with Better Stability ?
+> 60 - 40 principle : 60% of the instances are OD and 40% of them are SPOT 
+> We need to design the code in such a way that the same code should work across all the environments. 
+> In DEV, we might say 100% SPOT Instances 
+> In PROD, we would need 60% On Demand and 40% Spot Instances.
+
+### Here is our backend infra creation flow!
+
+1) Create EC2 Instances
+2) Install the applications component inside it
+3) Create a Target Group and instances should be added to them
+4) Attach the TG to ALB
