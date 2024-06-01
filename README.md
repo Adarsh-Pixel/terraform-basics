@@ -201,3 +201,10 @@ Provisioners help us to do tasks on the TOP of the created Infra or on the top o
 2) Install the applications component inside it
 3) Create a Target Group and instances should be added to them
 4) Attach the TG to ALB
+
+### Provisioners in Terraform by Default Are Create-Time-Provisioners
+---
+    * That means only during the creation of the resource your PROVISIONER running for the first time. 
+    * Rest of the times, your PROVISIONER won't be picked up. It would just refresh. 
+    * But, we also have an option to tell when this PROVISIONER has to be invoked, using triggers in TERRAFORM.
+---
