@@ -208,3 +208,7 @@ Provisioners help us to do tasks on the TOP of the created Infra or on the top o
     * Rest of the times, your PROVISIONER won't be picked up. It would just refresh. 
     * But, we also have an option to tell when this PROVISIONER has to be invoked, using triggers in TERRAFORM.
 ---
+
+# How systemd files can be filed with secrets from Secret Manager by Ansible.
+
+>>> Ansible should have the capability to fetch the secret from the AWS Secret Manager.
