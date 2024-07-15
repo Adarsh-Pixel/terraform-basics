@@ -212,3 +212,9 @@ Provisioners help us to do tasks on the TOP of the created Infra or on the top o
 # How systemd files can be filed with secrets from Secret Manager by Ansible.
 
 >>> Ansible should have the capability to fetch the secret from the AWS Secret Manager.
+
+### Once the product is ready [MVP : Minimum viable product], wthat's next?
+
+> 1) How can we benchmark the resource of the infrastructure.
+
+> 2) Before we release product to production, we do BENCHMARKING!
